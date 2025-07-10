@@ -1,92 +1,638 @@
-!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Strategic PM & Negotiations - Professional Project Management & Contract Negotiation Services</title>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic PM & Negotiations - Servicios Profesionales de Gestión de Proyectos y Negociación de Contratos</title>
     
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script type="module" crossorigin src="./assets/index-C2mChS17.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CQAhRICL.css">
-  
-<meta name="description" content="Expert project management and contract negotiation services. We navigate complexity to deliver your objectives on time and on budget.">
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Project Manageme... - made with heyboss.ai" />
-<meta name="twitter:description" content="Expert project management and " />
-<meta name="twitter:image" content="https://cdn.heyboss.tech/18086d9d/og-image-vQYiFfui.png" />
-<meta property="og:description" content="Expert project management and contract negotiation services. We navigate complexity to deliver your objectives on time and on budget." />
-<meta property="og:title" content="Project Manageme... - made with heyboss.ai" />
-<meta property="og:image" content="https://cdn.heyboss.tech/18086d9d/og-image-vQYiFfui.png" />
-<meta property="og:url" content="https://ba588f99.heyboss.tech/18086d9d/" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Servicios expertos de gestión de proyectos y negociación de contratos. Navegamos la complejidad para entregar sus objetivos a tiempo y dentro del presupuesto.">
+    <meta name="keywords" content="gestión de proyectos, negociación de contratos, consultoría, project management">
+    <meta name="author" content="Strategic PM & Negotiations">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Strategic PM & Negotiations - Servicios Profesionales">
+    <meta property="og:description" content="Servicios expertos de gestión de proyectos y negociación de contratos. Navegamos la complejidad para entregar sus objetivos a tiempo y dentro del presupuesto.">
+    <meta property="og:image" content="">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="Strategic PM & Negotiations - Servicios Profesionales">
+    <meta property="twitter:description" content="Servicios expertos de gestión de proyectos y negociación de contratos.">
+    <meta property="twitter:image" content="">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="rgba(255,255,255,0.1)"><polygon points="0,0 1000,0 1000,100 0,50"/></svg>') no-repeat center center;
+            background-size: cover;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .header-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header-content p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+        }
+        
+        .cta-button:hover {
+            background: #ff5252;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+        }
+        
+        /* Navigation */
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #333;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #667eea;
+        }
+        
+        /* Sections */
+        section {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+        
+        /* Services Section */
+        .services {
+            background: #f8f9fa;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: #667eea;
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .service-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+        
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 10px;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background: #f8f9fa;
+        }
+        
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .contact-info {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .contact-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #333;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in {
+            animation: fadeInUp 0.6s ease-out;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .about-content,
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-stats {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Loading animation */
+        .loading {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease;
+        }
+        
+        .loading.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
-  <body>
-<!-- heyboss.ai -->
-    <div id="app"></div>
-  <script id="heyboss-project-id" data-project-id="685865011513583c18086d9d"></script>
-<script> setTimeout(async () => { if (window.supabase) { const { data } = window.supabase.auth.onAuthStateChange(async (event, session) => { if (event === 'SIGNED_IN' && session?.user?.id) { try { await fetch(new URL('/api/supabase/users', 'https://heyboss.ai'), { method: 'POST', headers: { 'Content-Type': 'application/json', }, body: JSON.stringify({ email: session.user.email, user_id: session.user.id, project_id: '685865011513583c18086d9d', }), }) } catch (error) { console.log('Failed to save supabase user to heyboss', error) } } }); window.addEventListener('beforeunload', () => { data.subscription.unsubscribe() }) } }, 1000) </script>
-<script>!function(){window.addEventListener("error",function(e){window.parent.postMessage({type:"error",payload:{error:e.error.message}},"*")})}();</script>
-<script data-editor-version="1.3.0">"use strict";(()=>{var M="rgba(21, 241, 253)",x="rgba(21, 241, 253)",L="rgba(21, 241, 253)",c=`2px dashed ${L}`,d=-1,a="data-heyboss-ignore",w="data-heyboss-resizer",E="data-heyboss-hovered",u="data-heyboss-selected",h="data-heyboss-id",S=["h1","h2","h3","h4","h5","h6","p"],N=["fixed","sticky","relative","absolute"],_=["app","heyboss-resizer-top-center","heyboss-resizer-bottom-center"],T=["img","form","embed","video","audio","canvas","iframe","object"],H=`
-  .relative.h-screen.overflow-hidden > .absolute.inset-0,
-  .relative.h-screen.overflow-hidden > .absolute.inset-0 > .absolute.inset-0,
-  .relative.h-screen.overflow-hidden > .absolute.w-full.h-full,
-  .relative.h-screen.overflow-hidden > .absolute.w-full.h-full > .absolute.w-full.h-full,
-  .relative.min-h-screen.overflow-hidden > .absolute.inset-0,
-  .relative.min-h-screen.overflow-hidden > .absolute.inset-0 > .absolute.inset-0,
-  .relative.min-h-screen.overflow-hidden > .absolute.w-full.h-full,
-  .relative.min-h-screen.overflow-hidden > .absolute.w-full.h-full > .absolute.w-full.h-full,
-  section.relative.overflow-hidden[data-component-file*="hero"] > .absolute.inset-0,
-  section.relative.overflow-hidden[data-component-file*="hero"] > .absolute.inset-0 > .absolute.inset-0,
-  section.relative.overflow-hidden[data-component-file*="Hero"] > .absolute.inset-0,
-  section.relative.overflow-hidden[data-component-file*="Hero"] > .absolute.inset-0 > .absolute.inset-0
-`.trim(),z=`
-  .relative.min-h-screen.overflow-hidden > .relative.h-screen,
-  .relative.min-h-screen.overflow-hidden > .relative.min-h-screen
-`,O=`
-  .relative > img + div.absolute.inset-0,
-  .relative > .absolute.inset-0:has(+ img),
-  .absolute > img + div.absolute.inset-0,
-  .absolute > .absolute.inset-0:has(+ img),
-  .absolute > .absolute.inset-0:has(> img)
-`.trim(),A=`
-  .fixed > video + div.absolute.inset-0,
-  .fixed > .absolute.inset-0:has(+ video),
-  .relative > video + div.absolute.inset-0,
-  .relative > .absolute.inset-0:has(+ video),
-  .absolute > video + div.absolute.inset-0,
-  .absolute > .absolute.inset-0:has(+ video)
-`.trim(),g=/!?animate-([a-zA-Z0-9-]+)(?:-(\w+))?/g,b=/(?<!motion-preset-)(fade|glow|blur|spin|scale|pulse|slide|shake|bounce|rotate|shrink)(?:-\w+)?/g,l=/!?motion-preset-(\w+)(?:-(\w+))?/,v=/!?motion-duration-(?:\[)?([\w\.]+)(?:\])?/,p=class o{constructor(){this.getType=t=>this.ui.is.svg(t)?"icon":this.ui.is.image(t)?"image":this.ui.is.video(t)?"video":this.ui.is.text.element(t)?"text":(this.ui.is.block(t),"block");this.getData=t=>{let e=this.getType(t),i=o.getSelectionTextNode();i&&(i._text_=i._text_??i.textContent,i._child_=Array.from(i.parentElement?.childNodes??[]).indexOf(i));let s=this.ui.has.child(t,i),r=this.getItems(t);return{id:this.getHeybossId(t),type:e,text:{old:s?i?._text_??t._text_:t._text_,new:s?i?.textContent??t.innerText:t.innerText},href:{old:t._href_??"",new:t.getAttribute("href")??""},domid:t.id??"",style:this.getStyle(t),motion:this.getMotion(t),parent:this.getParent(t),count:r.count,index:r.index,child:s?i?._child_??d:d,src:{old:t._src_??"",new:e==="image"?t.src:e==="video"?o.getVideoSource(t):""},payload:{old:{componentName:t._componentName_??null,body:t.innerHTML},new:null},tag:t.tagName.toLowerCase(),tagName:t.tagName,innerText:t.innerText,innerHTML:t.innerHTML,outerHTML:t.outerHTML,className:this.ui.is.string(t.className)?t.className:"",component:this.ui.component.data(t)}};this.getStyle=t=>{if(!t)return null;let e=getComputedStyle(t);return t._font_=t._font_??e.fontFamily,t._font_weight_=t._font_weight_??e.fontWeight,{color:e.color,width:e.width,height:e.height,display:e.display,objectFit:e.objectFit,fontSize:e.fontSize,fontStyle:e.fontStyle,fontWeight:e.fontWeight,fontFamily:e.fontFamily,textAlign:e.textAlign,textDecoration:e.textDecoration,marginLeft:e.marginLeft,marginRight:e.marginRight,marginTop:e.marginTop,marginBottom:e.marginBottom,paddingLeft:e.paddingLeft,paddingRight:e.paddingRight,paddingTop:e.paddingTop,paddingBottom:e.paddingBottom,_font_:t._font_,_font_weight_:t._font_weight_}};this.getMotion=t=>{if(!t||this.ui.is.svg(t))return null;let[,e,i=""]=t.className.match(l)??[];if(!e)return null;let[,s=null]=t.className.match(v)??[];return{name:e,duration:s,direction:i}};this.getParent=t=>{if(!t||!t.parentElement)return null;let e=t.parentElement;return{id:this.setHeybossId(e),tag:e.tagName.toLowerCase(),tagName:e.tagName,href:e.getAttribute("href")??""}};this.selectParent=()=>{let t=this.getSelectableParent(this.target);this.isOff||!t||!this.ui.is.selectable(t)||t.click()};this.getSelectableParent=t=>{if(!t||!t.parentElement)return null;let e=t.parentElement;for(;e&&!this.ui.is.selectable(e);)e=e.parentElement;return e};this.getHeybossId=t=>t?t.getAttribute(h):null;this.setHeybossId=t=>t?(this.getHeybossId(t)||t.setAttribute(h,crypto.randomUUID()),t.getAttribute(h)):null;this.getByHeybossId=t=>document.querySelector(`[data-heyboss-id="${t}"]`);this.onTargets=(t,e)=>{let{items:i,count:s}=this.getItems(t);if(s>1)for(let r of i)e(r);else e(t)};this.onMouseUp=t=>{this.isOff||(this.resizing&&this.target!==t.target&&!this.ui.is.resizer(t.target)&&(this.ui.resizer.locked=!0),this.resizing=!1,this.ui.resizer.target.height=0,this.ui.resizer.target.paddingTop=0,this.ui.resizer.target.paddingBottom=0,document.documentElement.style.removeProperty("cursor"),document.documentElement.style.removeProperty("user-select"))};this.onMouseDown=t=>{if(this.isOff||!this.target||!this.ui.is.resizer(t.target))return;t.preventDefault(),t.stopImmediatePropagation(),(this.ui.is.image(this.target)||this.ui.is.video(this.target))&&this.ui.is.hero(t.target.parentElement)&&this.selectParent();let e=getComputedStyle(this.target);this.ui.resizer.target.height=Number.parseInt(e.height),this.ui.resizer.target.paddingTop=Number.parseInt(e.paddingTop),this.ui.resizer.target.paddingBottom=Number.parseInt(e.paddingBottom),document.documentElement.style.userSelect="none",document.documentElement.style.cursor="ns-resize",this.ui.resizer.top.center===t.target?this.resizer="top-center":this.ui.resizer.bottom.center===t.target&&(this.resizer="bottom-center"),this.resizer&&(this.resizing=!0,this.ui.resizer.target.clientX=t.clientX,this.ui.resizer.target.clientY=t.clientY)};this.onMouseMove=t=>{if(this.isOff||!this.resizing||!this.target)return;let e=t.clientY-this.ui.resizer.target.clientY,i=this.resizer==="top-center"?-e:this.resizer==="bottom-center"?e:0,s=this.getData(this.target);if(i!==0&&s.style){if((this.ui.is.hero(s)||s.className.includes("h-"))&&s.style.paddingTop==="0px"&&s.style.paddingBottom==="0px"){s.style.height=`${this.ui.resizer.target.height+i}px`,this.message({type:"editor.change.style.height",data:s});return}s.style.display==="inline"&&(s.style.display="inline-block",this.message({type:"editor.change.style.display",data:s})),s.style.paddingTop=`${Math.max(this.ui.resizer.target.paddingTop+i,0)}px`,s.style.paddingBottom=`${Math.max(this.ui.resizer.target.paddingBottom+i,0)}px`,this.message({type:"editor.change.style.paddingY",data:s})}};this.onMouseOver=t=>{this.isOff||this.resizing||this.onTargets(t.target,this.ui.hovered.on)};this.onMouseOut=t=>{this.isOff||this.resizing||this.onTargets(t.target,this.ui.hovered.off)};this.onClick=t=>{if(this.isOff)return;if(t.preventDefault(),t.stopImmediatePropagation(),this.ui.resizer.locked){this.ui.resizer.locked=!1;return}let e=t.target;if(!(!e||!this.ui.is.selectable(e))){if(this.setHeybossId(e),e._text_=e._text_||e.innerText||"",this.ui.is.link(e)&&(e._href_=e._href_||e.getAttribute("href")||""),this.ui.is.image(e)?e._src_=e._src_||e.src||"":this.ui.is.video(e)?e._src_=e._src_||o.getVideoSource(e)||"":this.ui.is.icon(e)&&(e._componentName_=e._componentName_||o.getComponentName(e)||""),this.scroll.selecting)return[this.target,this.scroll.target].includes(e)?void 0:(this.scroll.target&&this.ui.outline.off(this.scroll.target),this.scroll.target=e,this.ui.outline.on(e),this.message({type:"editor.scroll.select.target",data:this.getData(e)}));this.target===e?this.ui.editable.on(this.target):(this.ui.resizer.hide(),this.ui.editable.off(this.target),this.onTargets(this.target,this.ui.selected.off),this.target=e,this.ui.editable.on(this.target),this.onTargets(this.target,this.ui.selected.on),this.ui.resizer.show(this.target),this.scroll.target&&(this.ui.outline.on(this.scroll.target),this.scroll={target:null,selecting:!1})),this.message({type:"editor.select",data:this.getData(e)})}};this.onInput=t=>{let e=t.target;this.isOff||!e||this.ui.is.image(e)||this.message({type:"editor.change.text",data:this.getData(e)})};this.onKeyDown=t=>{let e=t.target;this.isOff||!e||this.ui.is.image(e)||t.key==="Enter"&&(t.preventDefault(),document.execCommand("insertHTML",!1,`
-`),this.message({type:"editor.change.text",data:this.getData(e)}))};this.onBlur=t=>{let e=t.target;this.isOff||!e||this.ui.is.image(e)||this.target&&this.ui.editable.off(this.target)};this.onEscape=t=>{t.key==="Escape"&&this.target&&this.onBlur(t)};this.ui={remove:t=>{t&&t.remove()},display:{none:t=>{t&&(t.style.display="none")},auto:t=>{t&&(t.style.display="")}},component:{map:t=>{if(!t||!t.dataset.componentMapStart||!t.dataset.componentMapEnd)return null;let e=t.dataset.componentMapStart.split(":"),i=t.dataset.componentMapEnd.split(":");return{start:{line:Number.parseInt(e[0]),column:Number.parseInt(e[1]),index:Number.parseInt(e[2])},end:{line:Number.parseInt(i[0]),column:Number.parseInt(i[1]),index:Number.parseInt(i[2])}}},data:t=>{if(!t)return null;let e=(t.dataset.componentStart??"").split(":"),i=(t.dataset.componentEnd??"").split(":");return{map:this.ui.component.map(t),src:t.dataset.componentSrc??"",name:t.dataset.componentName??"",path:t.dataset.componentPath??"",file:t.dataset.componentFile??"",class:t.dataset.componentClass??"",start:{line:Number.parseInt(e[0]),column:Number.parseInt(e[1]),index:Number.parseInt(e[2])},end:{line:Number.parseInt(i[0]),column:Number.parseInt(i[1]),index:Number.parseInt(i[2])},parent:this.ui.component.parent(t)}},parent:t=>{if(!t)return null;let e=t.parentElement;for(;e;){if(e.dataset.componentPath&&t.dataset.componentPath!==e.dataset.componentPath)return this.ui.component.data(e);e=e.parentElement}return null}},is:{svg:t=>t?t?.tagName==="svg":!1,icon:t=>t?t?.tagName==="svg"&&t.classList.contains("lucide"):!1,hero:t=>{if(!t)return!1;let e=t instanceof HTMLElement?this.getData(t):t;return e.tag==="section"&&e.className.includes("h-")&&e.className.includes("relative")&&e.className.includes("overflow-hidden")&&e.component?.file.toLowerCase().includes("hero")},link:t=>t?t?.tagName==="A":!1,image:t=>t?t?.tagName==="IMG":!1,video:t=>t?t?.tagName==="VIDEO":!1,block:t=>t?!this.ui.is.image(t)&&!this.ui.is.text.element(t):!1,text:{element:t=>{if(!t)return!1;let e=t.tagName.toLowerCase();return S.includes(e)?!0:T.includes(e)||t.querySelectorAll(T.join(",")).length>0?!1:Array.from(t.querySelectorAll("*")).filter(i=>!!i.textContent).length<=1},transparent:t=>t?t.classList.contains("text-transparent")||getComputedStyle(t).color==="rgba(0, 0, 0, 0)":!1},string:t=>t?typeof t=="string":!1,overlay:t=>t?t.classList.contains("absolute.inset-0"):!1,overflow:{hidden:t=>!t||this.ui.is.svg(t)?!1:t.className?.includes("overflow-hidden")||getComputedStyle(t).overflow==="hidden"},resizer:t=>t?[this.ui.resizer.top.center,this.ui.resizer.bottom.center].includes(t):!1,selected:t=>t?["true","inset"].includes(t.getAttribute(u)??""):!1,selectable:t=>{if(!t||_.includes(t.id)||t.getAttribute(a)==="true")return!1;let e=t.tagName.toLowerCase();return!["html","body"].includes(e)&&!this.ui.is.svg(t.parentElement)&&!this.ui.is.svg(t.parentElement?.parentElement)},positioned:t=>t?N.includes(getComputedStyle(t).position):!1},has:{image:t=>t?t.querySelectorAll("img").length>0:!1,child:(t,e)=>!t||!e?!1:Array.from(t.childNodes).some(i=>i===e)},should:{inset:t=>{if(!t)return null;if(this.ui.is.video(t))return"inset";let e=t.getBoundingClientRect(),i=Number.parseInt(getComputedStyle(t).width),s=t.parentElement;return this.ui.is.overflow.hidden(t)||s&&this.ui.is.overflow.hidden(s)||i===document.documentElement.clientWidth||e.top<=0||e.bottom>=window.innerHeight?"inset":null}},outline:{on:t=>{if(!t)return;t.style.outline=c;let e=t.parentElement;this.ui.is.video(t)||this.ui.is.image(t)||e&&this.ui.is.overflow.hidden(e)?(t.style.outlineOffset="-2px",e&&(t.style.borderRadius=getComputedStyle(e).borderRadius)):t.style.outlineOffset="0px"},off:t=>{if(!t)return;t.style.removeProperty("outline"),t.style.removeProperty("outline-offset");let e=t.parentElement;e&&this.ui.is.overflow.hidden(e)&&t.style.removeProperty("border-radius")}},hovered:{on:t=>{!t||!this.ui.is.selectable(t)||t?.nodeType!==Node.ELEMENT_NODE||(t.setAttribute(E,this.ui.should.inset(t)??"true"),t.style.cursor=this.ui.is.svg(t)||this.ui.is.image(t)?"pointer":"crosshair",this.ui.is.svg(t)||this.ui.is.image(t)?this.ui.outline.on(t):this.ui.is.positioned(t)||(t.style.position="relative"))},off:t=>{!t||!this.ui.is.selectable(t)||t?.nodeType!==Node.ELEMENT_NODE||(t.removeAttribute(E),t.style.cursor="",!this.ui.is.selected(t)&&(this.ui.is.svg(t)||this.ui.is.image(t)?this.ui.outline.off(t):t.style.position=""))}},selected:{on:t=>{t&&(this.ui.is.svg(t)||this.ui.is.image(t)||this.ui.is.video(t)?this.ui.outline.on(t):this.ui.is.positioned(t)||(t.style.position="relative"),t.setAttribute(u,this.ui.should.inset(t)??"true"))},off:t=>{t&&(t.style.position="",t.removeAttribute(u),(this.ui.is.svg(t)||this.ui.is.image(t)||this.ui.is.video(t))&&this.ui.outline.off(t))}},editable:{on:t=>{this.ui.is.text.element(t)&&(t.addEventListener("input",this.onInput),t.addEventListener("blur",this.onBlur),t.addEventListener("keydown",this.onKeyDown),t.contentEditable="plaintext-only",t.style.outline="none",t.style.cursor="text",t.style.whiteSpace="pre-wrap",t.focus(),this.ui.is.text.transparent(t)&&(t.style.caretColor=M))},off:t=>{t&&(t.removeEventListener("input",this.onInput),t.removeEventListener("blur",this.onBlur),t.removeEventListener("keydown",this.onKeyDown),t.contentEditable="false",t.style.cursor="",t.style.caretColor="",t.style.outline="")}},resizer:{locked:!1,target:{height:0,clientY:0,clientX:0,paddingTop:0,paddingBottom:0},top:{center:document.createElement("span")},bottom:{center:document.createElement("span")},styles:{basic:t=>{t.style.width="36px",t.style.height="10px",t.style.zIndex="10000",t.style.cursor="ns-resize",t.style.position="absolute",t.style.userSelect="none",t.style.borderRadius="10px",t.style.backgroundColor=x,t.style.transition="all 0.1s ease-in-out",t.setAttribute(w,"true")}},init:()=>{this.ui.resizer.styles.basic(this.ui.resizer.top.center),this.ui.resizer.top.center.id="heyboss-resizer-top-center",this.ui.resizer.top.center.style.top="-8px",this.ui.resizer.top.center.style.left="50%",this.ui.resizer.top.center.style.transform="translateX(-50%)",this.ui.resizer.styles.basic(this.ui.resizer.bottom.center),this.ui.resizer.bottom.center.id="heyboss-resizer-bottom-center",this.ui.resizer.bottom.center.style.bottom="-8px",this.ui.resizer.bottom.center.style.left="50%",this.ui.resizer.bottom.center.style.transform="translateX(-50%)"},hide:()=>{this.isModeEdit&&(this.ui.resizer.top.center.remove(),this.ui.resizer.bottom.center.remove())},show:t=>{if(!t||!this.isModeEdit||t.getAttribute(a)==="true")return;let e=this.getType(t);if(e==="text"){let i=this.ui.is.overflow.hidden(t)?"-5px":"-8px";this.ui.resizer.top.center.style.top=i,this.ui.resizer.bottom.center.style.bottom=i}else if(e==="block")this.ui.resizer.top.center.style.top="-5px",this.ui.resizer.bottom.center.style.bottom="-5px";else if(["image","video"].includes(e)){let i=this.getSelectableParent(t);if(i&&this.ui.is.hero(i)){this.ui.resizer.top.center.style.top="-5px",this.ui.resizer.bottom.center.style.bottom="-5px",i.appendChild(this.ui.resizer.top.center),i.appendChild(this.ui.resizer.bottom.center);return}}t.appendChild(this.ui.resizer.top.center),t.appendChild(this.ui.resizer.bottom.center)}}};this.mode=null,this.hash=null,this.state="off",this.target=null,this.resizer=null,this.resizing=!1,this.scroll={target:null,selecting:!1},this.ui.resizer.init(),this.observer=new MutationObserver(()=>{this.isOn&&(o.disableIframes(),o.disableOverlays())}),this.hash=window.location.hash,window.parent!==window.self&&setInterval(()=>{window.location.hash!==this.hash&&(this.hash=window.location.hash,this.message({type:"editor.hashchange",data:window.location.hash}))},100)}static reload(){window.location.reload()}static navigate(t){let e=new URL(window.location.href);t&&(e.hash=`#${t}`,window.location.href=e.toString())}static{this.getComponentName=t=>t&&t.getAttribute("data-component-name")||null}static{this.getVideoSource=t=>!t||t.tagName.toLowerCase()!=="video"?null:t instanceof HTMLVideoElement&&t.src?t.src:t.querySelector("source")?.src||null}static{this.setVideoSource=(t,e)=>{if(!(!t||t.tagName.toLowerCase()!=="video")&&t instanceof HTMLVideoElement){t.src=e;let i=t.querySelector("source");i&&(i.src=e),t.load()}}}static getSelectionTextNode(){let t=window.getSelection();return t?.type==="Caret"&&t.anchorNode&&t.anchorNode.nodeType===Node.TEXT_NODE?t.anchorNode:null}static{this.disableIframes=()=>{let t=document.querySelectorAll("iframe");for(let e of t)e.style.pointerEvents="none"}}static{this.disableOverlays=()=>{this.disableHeroOverlays(),this.disableHomeOverlays(),this.disableVideoOverlays(),this.disableImageOverlays()}}static{this.disableHeroOverlays=()=>{let t=document.querySelectorAll(H);for(let e of t)e.style.pointerEvents="none",e.setAttribute(a,"true")}}static{this.disableHomeOverlays=()=>{let t=document.querySelectorAll(z);for(let e of t){e.style.pointerEvents="none",e.setAttribute(a,"true");for(let i of Array.from(e.children))!i.className.includes("absolute")&&!i.className.includes("inset-0")&&(i.style.pointerEvents="auto")}}}static{this.disableImageOverlays=()=>{let t=document.querySelectorAll(O);for(let e of t){e.style.pointerEvents="none",e.setAttribute(a,"true");for(let i of Array.from(e.children))i.style.pointerEvents="auto"}}}static{this.disableVideoOverlays=()=>{let t=document.querySelectorAll(A);for(let i of t)i.style.pointerEvents="none",i.setAttribute(a,"true");let e=document.querySelectorAll("video");for(let i of e)i.style.pointerEvents="auto"}}static clearSelection(){let t=window.getSelection();t?.type==="Caret"&&t.removeAllRanges()}get isOn(){return this.state==="on"}get isOff(){return this.state==="off"}get isModeSelect(){return this.mode==="select"}get isModeEdit(){return this.mode==="edit"}observe(t){t?this.observer?.observe(document.body,{childList:!0,subtree:!0}):this.observer?.disconnect()}message({type:t,data:e}){window.parent.postMessage({type:t,data:e},"*")}loaded(){this.message({type:"editor.loaded",data:null})}getItems(t){if(!t||!t.dataset.componentPath||!t.dataset.componentStart)return{items:[],index:d,count:0};let e=Array.from(document.querySelectorAll(`[data-component-start="${t.dataset.componentStart}"][data-component-path="${t.dataset.componentPath}"]`));return{items:e,index:e.indexOf(t),count:e.length}}styles(){let t=document.createElement("style");t.id="heyboss-editor-style",t.innerHTML=`
-      [data-heyboss-hovered]::before {
-        inset: 0;
-        content: '';
-        z-index: 10000;
-        position: absolute;
-        pointer-events: none;
-        outline: ${c} !important;
-        background-color: rgba(21, 241, 253, 0.1);
-      }
-      [data-heyboss-selected]::before {
-        inset: 0;
-        content: '';
-        z-index: 10000;
-        position: absolute;
-        pointer-events: none;
-        outline-offset: 2px;
-        outline: ${c} !important;
-        transition: outline-offset 0.1s ease-in-out;
-      }
-      [data-heyboss-selected]:focus::before {
-        background-color: rgba(21, 241, 253, 0.06) !important;
-        box-shadow: 0 0 0 2px rgba(21, 241, 253, 0.06) !important;
-      }
-      [data-heyboss-selected][data-heyboss-hovered]::before {
-        background-color: transparent;
-      }
-      [data-heyboss-hovered="inset"]::before,
-      [data-heyboss-selected="inset"]::before {
-        outline-offset: -2px !important;
-      }
-    `,document.head.appendChild(t)}listen(){window.addEventListener("message",t=>{let{type:e,data:i}=t.data;if(!(!e||!e?.startsWith("editor"))){if(e==="editor"&&i.state)if(this.state=i.state,this.isOn)this.mode=i.mode,o.disableOverlays(),document.addEventListener("mouseup",this.onMouseUp),document.addEventListener("mousedown",this.onMouseDown,!0),document.addEventListener("mousemove",this.onMouseMove),document.addEventListener("mouseover",this.onMouseOver),document.addEventListener("mouseout",this.onMouseOut),document.addEventListener("keydown",this.onEscape),document.addEventListener("click",this.onClick,!0),this.observe(!0);else{o.reload();return}if(e==="editor.reload")return o.reload();if(e==="editor.navigate")return o.navigate(i);if(e==="editor.scroll.select.start"){this.scroll.selecting=!0;return}if(e==="editor.scroll.select.end"){this.scroll.target&&(this.ui.outline.off(this.scroll.target),this.scroll.target=null),this.scroll.selecting=!1;return}if(e==="editor.select.parent")return this.selectParent();if(e==="editor.select.editable"){if(!i?.editable||this.isModeSelect){let s=this.getByHeybossId(i?.id??"");this.ui.editable.off(s),s?.blur()}return}if(e==="editor.change.remove"&&this.target){this.onTargets(this.target,this.ui.display.none),this.target=null;return}if(e==="editor.change.remove.undo"&&i?.id){this.target=this.getByHeybossId(i.id),this.onTargets(this.target,this.ui.display.auto);return}if(e==="editor.change.src"&&i?.id){if(!this.target||this.getHeybossId(this.target)!==i.id)return;this.ui.is.image(this.target)?this.target.src=i.src.new:this.ui.is.video(this.target)&&o.setVideoSource(this.target,i.src.new);return}if(e==="editor.change.payload"&&i?.id){if(!this.target||this.getHeybossId(this.target)!==i.id)return;this.ui.is.icon(this.target)&&(this.target.innerHTML=i.payload.new.body);return}if(e==="editor.change.text"&&i?.id){if(!this.target||this.getHeybossId(this.target)!==i.id)return;i.child===d?this.target.innerText=i.text.new:this.target.childNodes[i.child].nodeValue=i.text.new;return}if(e==="editor.change.href"&&i?.id){if(!this.target||this.getHeybossId(this.target)!==i.id)return;this.ui.is.link(this.target)&&this.target.setAttribute("href",i.href.new);return}if(e.startsWith("editor.change.motion")&&this.target){let s=i.motion;if(!s)return;this.onTargets(this.target,r=>{if(s.name==="none"){r.className=r.className.replace(g,"").replace(l,"").replace(v,"");return}let n=s.direction?`motion-preset-${s.name}-${s.direction}`:`motion-preset-${s.name}`;(g.test(r.className)||b.test(r.className))&&(r.className=r.className.replace(g,"").replace(b,"")),l.test(r.className)&&(r.className=r.className.replace(l,"")),s.duration?r.style.setProperty("animation-duration",s.duration.endsWith("s")?s.duration:`${Number(s.duration)/1e3}s`,"important"):r.style.setProperty("animation-duration",""),setTimeout(()=>r?.classList.add(n),50)})}if(e.startsWith("editor.change.style")){let s=["editor.change.style.color","editor.change.style.height","editor.change.style.display","editor.change.style.objectFit","editor.change.style.fontSize","editor.change.style.fontStyle","editor.change.style.fontWeight","editor.change.style.fontFamily","editor.change.style.textAlign","editor.change.style.textDecoration","editor.change.style.marginLeft","editor.change.style.marginRight","editor.change.style.marginTop","editor.change.style.marginBottom","editor.change.style.paddingLeft","editor.change.style.paddingRight","editor.change.style.paddingTop","editor.change.style.paddingBottom"],r=i,n=e.split(".").pop(),y=n.split(/(?=[A-Z])/).join("-").toLowerCase();this.target&&y&&s.includes(e)&&r?.style?.[n]&&r?.id&&r.id===this.getHeybossId(this.target)&&this.onTargets(this.target,m=>{m.style.setProperty(y,r.style[n],"important"),n==="height"&&m.style.setProperty("min-height","auto","important")})}}})}},f=new p;f.styles();f.listen();f.loaded();})();</script>
-</html>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>Strategic PM & Negotiations</h1>
+                <p>Servicios expertos de gestión de proyectos y negociación de contratos. Navegamos la complejidad para entregar sus objetivos a tiempo y dentro del presupuesto.</p>
+                <a href="#contact" class="cta-button">Contactar Ahora</a>
+            </div>
+        </div>
+    </header>
 
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo">Strategic PM</div>
+                <ul class="nav-links">
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card loading">
+                    <div class="service-icon">📊</div>
+                    <h3>Gestión de Proyectos</h3>
+                    <p>Planificación, ejecución y control de proyectos complejos con metodologías probadas para garantizar el éxito dentro del tiempo y presupuesto establecidos.</p>
+                </div>
+                <div class="service-card loading">
+                    <div class="service-icon">🤝</div>
+                    <h3>Negociación de Contratos</h3>
+                    <p>Expertise en negociación estratégica para asegurar términos favorables y relaciones comerciales sólidas que generen valor a largo plazo.</p>
+                </div>
+                <div class="service-card loading">
+                    <div class="service-icon">📈</div>
+                    <h3>Consultoría Estratégica</h3>
+                    <p>Análisis profundo de procesos y desarrollo de estrategias personalizadas para optimizar la eficiencia operacional y el crecimiento empresarial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">¿Por Qué Elegirnos?</h2>
+            <div class="about-content">
+                <div class="about-text loading">
+                    <p>Con más de una década de experiencia en gestión de proyectos y negociación de contratos, nuestro equipo combina expertise técnico con visión estratégica para entregar resultados excepcionales.</p>
+                    <p>Nos especializamos en navegar la complejidad de proyectos multidisciplinarios y negociaciones de alto nivel, asegurando que cada cliente alcance sus objetivos de manera eficiente y rentable.</p>
+                    <p>Nuestro enfoque personalizado y compromiso con la excelencia nos ha posicionado como socios estratégicos de confianza para empresas líderes en diversos sectores.</p>
+                </div>
+                <div class="about-stats loading">
+                    <div class="stat-item">
+                        <span class="stat-number">150+</span>
+                        <span class="stat-label">Proyectos Completados</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Tasa de Éxito</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Clientes Satisfechos</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Años de Experiencia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-content">
+                <div class="contact-info loading">
+                    <h3>Hablemos de su Proyecto</h3>
+                    <p>¿Tiene un proyecto complejo que requiere gestión especializada? ¿Necesita negociar contratos estratégicos? Estamos aquí para ayudarle.</p>
+                    <br>
+                    <p><strong>Email:</strong> info@strategicpm.com</p>
+                    <p><strong>Teléfono:</strong> +1 (555) 123-4567</p>
+                    <p><strong>Horario:</strong> Lunes - Viernes, 9:00 AM - 6:00 PM</p>
+                    <br>
+                    <p>Ofrecemos consultas iniciales gratuitas para evaluar sus necesidades y proponer soluciones personalizadas.</p>
+                </div>
+                <div class="contact-form loading">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nombre Completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Empresa</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" placeholder="Cuéntenos sobre su proyecto o necesidades..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Strategic PM & Negotiations. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Loading animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.loading').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Show success message (you can replace this with actual form submission)
+            alert('¡Gracias por su mensaje! Nos pondremos en contacto con usted pronto.');
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Add active class to navigation based on scroll position
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Add parallax effect to header
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const header = document.querySelector('header');
+            if (header) {
+                header.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+
+        // Counter animation for stats
+        function animateCounter(element, start, end, duration) {
+            let startTime = null;
+            const step = (timestamp) => {
+                if (!startTime) startTime = timestamp;
+                const progress = Math.min((timestamp - startTime) / duration, 1);
+                const current = Math.floor(progress * (end - start) + start);
+                element.textContent = current + (element.textContent.includes('%') ? '%' : '+');
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        // Trigger counter animation when stats are visible
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statNumber = entry.target.querySelector('.stat-number');
+                    const finalNumber = parseInt(statNumber.textContent);
+                    animateCounter(statNumber, 0, finalNumber, 2000);
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.stat-item').forEach(item => {
+            statsObserver.observe(item);
+        });
+    </script>
+</body>
+</html>
